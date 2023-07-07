@@ -29,27 +29,27 @@ class StatsticalAnalysis extends PureComponent {
   // used to display the flavanoids mean, median and mode.
   dispFlavanoidsAnalysis = (data) => {
     const dispFlavanoidsmean = data?.map(item => {
-      return <tr key={item.flavanoidsCal.mean}><td>{item.flavanoidsCal.mean}</td></tr>
+      return <td key={item.flavanoidsCal.mean}>{item.flavanoidsCal.mean}</td>
     })
     const dispFlavanoidsmedian = data?.map(item => {
-      return <tr key={item.flavanoidsCal.median}><td>{item.flavanoidsCal.median}</td></tr>
+      return <td key={item.flavanoidsCal.median}>{item.flavanoidsCal.median}</td>
     })
     const dispFlavanoidsmode = data?.map(item => {
-      return <tr key={item.flavanoidsCal.mode}><td>{item.flavanoidsCal.mode}</td></tr>
+      return <td key={item.flavanoidsCal.mode}>{item.flavanoidsCal.mode}</td>
     })
     return (
       <React.Fragment>
         <tr>
           <td>Flavanoids mean</td>
-          <td>{dispFlavanoidsmean}</td>
+          {dispFlavanoidsmean}
         </tr>
         <tr>
           <td>Flavanoids median</td>
-          <td>{dispFlavanoidsmedian}</td>
+          {dispFlavanoidsmedian}
         </tr>
         <tr>
-          <td>Flavanoids mode</td>
-          <td>{dispFlavanoidsmode}</td>
+        <td>Flavanoids mode</td>
+          {dispFlavanoidsmode}
         </tr>
       </React.Fragment>
     )
@@ -59,27 +59,27 @@ class StatsticalAnalysis extends PureComponent {
   // used to display the gamma mean, median and mode.
   dispGammaAnalysis = (data) => {
     const dispGammamean = data?.map(item => {
-      return <tr key={item.gammaCal.mean}><td>{item.gammaCal.mean}</td></tr>
+      return <td key={item.gammaCal.mean}>{item.gammaCal.mean}</td>
     })
     const dispGammamedian = data?.map(item => {
-      return <tr key={item.gammaCal.median}><td>{item.gammaCal.median}</td></tr>
+      return <td key={item.gammaCal.median}>{item.gammaCal.median}</td>
     })
     const dispGammamode = data?.map(item => {
-      return <tr key={item.gammaCal.mode}><td>{item.gammaCal.mode}</td></tr>
+      return <td key={item.gammaCal.mode}>{item.gammaCal.mode}</td>
     })
     return (
       <React.Fragment>
         <tr>
           <td>Gamma mean</td>
-          <td>{dispGammamean}</td>
+          {dispGammamean}
         </tr>
         <tr>
           <td>Gamma median</td>
-          <td>{dispGammamedian}</td>
+          {dispGammamedian}
         </tr>
         <tr>
           <td>Gamma mode</td>
-          <td>{dispGammamode}</td>
+          {dispGammamode}
         </tr>
       </React.Fragment>
     )

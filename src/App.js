@@ -1,6 +1,5 @@
 import StatsticalAnalysis from './compnents/statsticalAna';
 
-
 function App() {
   return (
     <div>
